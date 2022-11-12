@@ -1,0 +1,772 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 24px;
+  color: #343a40;
+}
+/*1. Xây dựng phần ảnh Banner*/
+#header {
+  height: 500px;
+  color: rgb(245, 245, 245);
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.5),
+      rgba(34, 34, 34, 0.5)
+    ),
+    url(/images/banner.jpg);
+  background-size: cover;
+}
+#banner {
+  text-align: center;
+
+  font-size: 20px;
+  color: #fff;
+  padding: 50px;
+}
+#banner span {
+  font-weight: 400;
+  color: rgb(211, 208, 208);
+} /*1. Xây dựng phần ảnh Banner*/
+/*2. Xây dựng Navbar*/
+#nav-bar {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: grid;
+  align-items: center;
+  gap: 0;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 250px;
+}
+.ten {
+  text-transform: none;
+  font-size: x-large;
+  grid-area: 1/3/1/4;
+  text-align: center;
+}
+.thunhat {
+  font-size: 20px;
+  line-height: 1;
+  padding: 25px;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+}
+.thuhai {
+  padding: 25px;
+  border-right: 1px solid #c2c2c2;
+}
+.thuba {
+  padding: 25px;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+}
+.thutu {
+  padding: 25px;
+  border-right: 1px solid #c2c2c2;
+}
+.menu:link,
+.menu:visited {
+  color: #343a40;
+  font-weight: 400;
+  font-size: 30px;
+  text-decoration: none;
+}
+.menu:hover {
+  color: rgb(46, 196, 223);
+}
+section a > i {
+  color: rgb(46, 196, 223);
+}
+/*2. Xây dựng Navbar*/
+/*3. Xây dựng Thông tin cá nhân*/
+.container-info {
+  line-height: 1.4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#target {
+  padding-top: 60px;
+  padding-left: 150px;
+  padding-right: 50px;
+  background-color: #7b7e7d13;
+}
+#personal-info {
+  padding-top: 60px;
+  padding-left: 50px;
+  background-color: #7b7e7d1e;
+}
+.mt-40-info {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.section-title {
+  padding: 60px 0px;
+}
+.icon-social {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: rgb(46, 196, 223);
+}
+/*3. Xây dựng Thông tin cá nhân*/
+/*4. Xây dựng phần Thông tin nghề nghiệp*/
+#job-info {
+  margin-top: 50px;
+}
+#job-info i {
+  transform: scale(1.5);
+  text-align: center;
+}
+.container-time-line {
+  padding: 0 300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.kinh-nghiem {
+  line-height: 1.6;
+  border: 1px solid #343a401a;
+}
+.kinh-nghiem-icon {
+  padding: 50px 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+}
+#job-info ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#job-info span {
+  color: #fff;
+  background-color: rgb(46, 196, 223);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.kinh-nghiem-box {
+  padding: 0 50px;
+}
+.bullet {
+  display: flex;
+}
+.bi {
+  color: rgb(46, 196, 223);
+  margin-right: 20px;
+}
+.box2 {
+  margin: 50px 0;
+}
+.ky-nang {
+  border: 1px solid #343a401a;
+}
+.ky-nang-html {
+  padding-top: 0px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30px 10px;
+  column-gap: 10px;
+}
+.ky-nang-html p:nth-of-type(1) {
+  line-height: 1.4;
+  text-align: left;
+  grid-area: 1/1/2/4;
+}
+
+.ky-nang-html p:nth-of-type(2) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ky-nang-html p:nth-of-type(3) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ky-nang-html p:nth-of-type(4) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ky-nang-java {
+  padding-top: 30px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30px 10px;
+  column-gap: 10px;
+}
+.ky-nang-java p:nth-of-type(1) {
+  line-height: 1.4;
+  text-align: left;
+  grid-area: 1/1/2/4;
+}
+
+.ky-nang-java p:nth-of-type(2) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ky-nang-java p:nth-of-type(3) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ky-nang-java p:nth-of-type(4) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ky-nang-nodejs {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30px 10px;
+  column-gap: 10px;
+}
+.ky-nang-nodejs p:nth-of-type(1) {
+  line-height: 1.4;
+  text-align: left;
+  grid-area: 1/1/2/4;
+}
+
+.ky-nang-nodejs p:nth-of-type(2) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ky-nang-nodejs p:nth-of-type(3) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ky-nang-nodejs p:nth-of-type(4) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ky-nang-bootstrap {
+  padding-top: 30px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30px 10px;
+  column-gap: 10px;
+}
+.ky-nang-bootstrap p:nth-of-type(1) {
+  line-height: 1.4;
+  text-align: left;
+  grid-area: 1/1/2/4;
+}
+
+.ky-nang-bootstrap p:nth-of-type(2) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ky-nang-bootstrap p:nth-of-type(3) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ky-nang-bootstrap p:nth-of-type(4) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.content-ky-nang {
+  width: 300px;
+  margin-left: 40px;
+}
+.ngon-ngu {
+  border: 1px solid #343a401a;
+}
+.ngon-ngu-en {
+  padding-left: 40px;
+  padding-top: 0px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30px 10px;
+  column-gap: 10px;
+}
+.ngon-ngu-en p:nth-of-type(1) {
+  line-height: 1.4;
+  text-align: left;
+  grid-area: 1/1/2/4;
+}
+
+.ngon-ngu-en p:nth-of-type(2) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ngon-ngu-en p:nth-of-type(3) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ngon-ngu-en p:nth-of-type(4) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ngon-ngu-jp {
+  padding-left: 40px;
+  padding-top: 30px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30px 10px;
+  column-gap: 10px;
+}
+.ngon-ngu-jp p:nth-of-type(1) {
+  line-height: 1.4;
+  text-align: left;
+  grid-area: 1/1/2/4;
+}
+
+.ngon-ngu-jp p:nth-of-type(2) {
+  border-bottom: 4px solid rgb(46, 196, 223);
+}
+.ngon-ngu-jp p:nth-of-type(3) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.ngon-ngu-jp p:nth-of-type(4) {
+  border-bottom: 4px solid #7b7e7d3d;
+}
+.hoat-dong {
+  border: 1px solid #343a401a;
+}
+.hoat-dong-box {
+  padding-left: 40px;
+  line-height: 1.4;
+}
+.hoc-van {
+  border: 1px solid #343a401a;
+}
+.hoc-van-box {
+  padding-left: 40px;
+  line-height: 1.4;
+}
+.so-thich {
+  border: 1px solid #343a401a;
+  box-sizing: border-box;
+}
+.so-thich-box i {
+  margin-left: 10px;
+  font-size: small;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgb(46, 196, 223);
+  border-radius: 50%;
+  color: rgb(46, 196, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.so-thich-box {
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon-am-nhac i {
+  margin-left: 15px;
+}
+.icon-choi-game i {
+  margin-left: 25px;
+}
+#certificate {
+  padding-bottom: 50px;
+  margin-top: 30px;
+  background-color: rgba(100, 104, 103, 0.082);
+}
+#certificate h1 {
+  padding-left: 200px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container-chung-chi {
+  margin: 50px 0;
+  padding: 0 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px 30px;
+}
+.chung-chi-1 {
+  display: flex;
+}
+#certificate ul li {
+  line-height: 1.4;
+  list-style-type: none;
+}
+#certificate ul {
+  padding-top: 30px;
+}
+.chung-chi-box {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+#box-border {
+  padding-top: 30px;
+  grid-area: 2/1/3/4;
+  border-top: 2px solid #e05f2c6e;
+}
+#box-2 {
+  padding-left: 30px;
+  border-left: 2px solid#e05f2c6e;
+}
+.box-du-an {
+  margin: 50px 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.du-an-1 {
+  border: 1px solid #343a401a;
+}
+.section-title {
+  padding-left: 200px;
+}
+.cv {
+  border-top: 1px solid #343a401a;
+  border-bottom: 1px solid #343a401a;
+  padding: 15px 15px;
+  text-align: left;
+}
+#footer img {
+  width: 100%;
+}
+.box-2021 {
+  border-bottom: 1px solid #343a401a;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.highlight {
+  font-size: small;
+  color: #fff;
+  background-color: rgb(46, 196, 223);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.mo-ta {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-bottom: 1px solid #343a401a;
+}
+.mo-ta-cong-nghe {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.padding {
+  padding-bottom: 38px;
+}
+.footer {
+  background-color: #343a401a;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+#footer-social li {
+  list-style-type: none;
+}
+#footer-social i {
+  color: rgb(46, 196, 223);
+  transform: scale(4);
+}
+.avatar {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  outline: 10px solid #fff;
+  border-radius: 50%;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(46, 196, 223);
+}
+.footer li {
+  font-size: 30px;
+  padding: 0 30px;
+}
+.icon-facebook-circled {
+  transform: scale(2);
+}
+@media only screen and (max-width: 767.98px) {
+  #header {
+    width: auto;
+    height: 700px;
+    color: rgb(245, 245, 245);
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.5),
+        rgba(34, 34, 34, 0.5)
+      ),
+      url(/images/banner.jpg);
+    background-size: cover;
+  }
+  #banner {
+    padding-top: 120px;
+  }
+  #nav-bar a {
+    font-size: 12px;
+  }
+  #nav-bar {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px 1fr 1fr;
+    align-items: center;
+    gap: 0;
+    justify-items: center;
+    margin: 0 50px;
+  }
+  .container-info {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: (repeat(2, 1fr));
+    grid-template-rows: auto;
+    margin: auto;
+  }
+  .container-info h1 {
+    padding-left: 0;
+  }
+  #target {
+    padding: 10px;
+  }
+  #personal-info {
+    padding: 10px;
+  }
+  .container-time-line {
+    height: 150vh;
+    font-size: 18px;
+    padding: 0;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  .kinh-nghiem {
+    width: 350px;
+    height: auto;
+  }
+  .ky-nang {
+    width: 350px;
+    height: auto;
+  }
+  .ngon-ngu {
+    width: 350px;
+    height: auto;
+  }
+  .hoc-van {
+    width: 350px;
+    height: auto;
+  }
+  .so-thich {
+    overflow: auto;
+    width: 350px;
+    height: auto;
+  }
+  .hoat-dong {
+    width: 350px;
+    height: auto;
+  }
+  #certificate {
+    font-size: 15px;
+  }
+  #certificate h1 {
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  #certificate img {
+    width: 300px;
+  }
+  .container-chung-chi {
+    padding: 0;
+    margin: 0 50px;
+  }
+  .chung-chi-1 {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  .chung-chi-box {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+  #footer h1 {
+    font-size: 25px;
+    padding: 30px 0;
+    padding-left: 50px;
+    margin: 0;
+  }
+  .box-du-an {
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    padding: 5px 0;
+    margin: 0 20px;
+    margin-bottom: 50px;
+  }
+  #footer-social {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+  .footer {
+    padding: 50px 0;
+    margin: 0;
+    background-color: #343a401a;
+    display: flex;
+    justify-content: center;
+  }
+  .none {
+    text-align: center;
+    font-size: 15px;
+    color: #343a40;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #header {
+    width: auto;
+    height: 500px;
+    color: rgb(245, 245, 245);
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.5),
+        rgba(34, 34, 34, 0.5)
+      ),
+      url(/images/banner.jpg);
+    background-size: cover;
+  }
+  #banner {
+    padding-top: 120px;
+  }
+  #nav-bar a {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #nav-bar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 50px;
+    margin: 0;
+  }
+  .container-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0;
+  }
+  .container-info h1 {
+    padding-left: 0;
+  }
+  #target {
+    padding: 10px;
+  }
+  #personal-info {
+    padding: 10px;
+  }
+  .container-time-line {
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin: 0 20px;
+  }
+
+  .kinh-nghiem {
+    width: auto;
+    height: auto;
+  }
+  .ky-nang {
+    width: auto;
+    height: auto;
+  }
+  .ngon-ngu {
+    width: auto;
+    height: auto;
+  }
+  .hoc-van {
+    width: auto;
+    height: auto;
+  }
+  .so-thich {
+    overflow: auto;
+    width: auto;
+    height: auto;
+  }
+  .hoat-dong {
+    width: auto;
+    height: auto;
+  }
+  #certificate {
+    font-size: 15px;
+  }
+  #certificate h1 {
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  #certificate img {
+    width: 100%;
+  }
+  .container-chung-chi {
+    display: flex;
+    flex-direction: column;
+  }
+  .chung-chi-1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  #box-2 {
+    padding: 30px 0;
+    border: none;
+    border-top: 2px solid #c4998493;
+    border-bottom: 2px solid #c4998493;
+  }
+  #box-border {
+    border: none;
+  }
+  .chung-chi-box {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  #footer h1 {
+    font-size: 25px;
+    padding: 30px 0;
+    padding-left: 50px;
+    margin: 0;
+  }
+  .box-du-an {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer-social {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+  .footer {
+    padding: 50px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .footer ul {
+    font-size: 30px;
+  }
+  .footer li > a {
+    font-style: normal;
+    font-size: 50px;
+    color: #343a40;
+  }
+  .none {
+    display: none;
+  }
+}
