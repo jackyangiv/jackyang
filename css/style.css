@@ -494,7 +494,7 @@ img {
         rgba(34, 34, 34, 0.5),
         rgba(34, 34, 34, 0.5)
       ),
-      url(/images/banner.jpg);
+      url("./banner.jpg");
     background-size: cover;
   }
   #banner {
@@ -636,7 +636,7 @@ img {
         rgba(34, 34, 34, 0.5),
         rgba(34, 34, 34, 0.5)
       ),
-      url(/images/banner.jpg);
+      url("./banner.jpg");
     background-size: cover;
   }
   #banner {
